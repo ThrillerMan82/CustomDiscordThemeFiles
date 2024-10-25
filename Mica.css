@@ -1,0 +1,66 @@
+/**
+* @name !mica
+* @author ٴFeoreVٴ#3377
+* @description mica 
+* @version  DEV
+* @authorId 489785940546551831
+*/
+
+/*=============================================
+=                    Data                     =
+=============================================*/
+:root{
+	--subtheme: "FVUI-Mica"!important;
+	--warringmica:  "       ";
+}
+:root{
+	--BGopacity: 30%;
+	--BGcolor: var(--color2);
+	--BGMica: rgba(var(--BGcolor),var(--BGopacity));
+}
+
+/*=============================================
+=                    Alert                    =
+=============================================*/
+.wordmarkWindows_a934d8::after{
+	position: absolute;
+	left: 10px;
+
+	color: red;
+	font-size: 16px;
+	font-weight: 900;
+	filter: drop-shadow(0 0 10px currentColor);
+
+	content: var(--warring11, var(--warringdef));
+}
+
+
+
+/*=============================================
+=                    Code                     =
+=============================================*/
+
+:root {
+	--background-tertiary: var(--BGMica);
+}
+
+#app-mount{
+  background: none !important;
+}
+
+.theme-light .wordmarkWindows_a934d8::before { /*THEME-LIGHT*/
+    position: fixed;
+	left: 50%;
+
+    content: var(--FVUI) ' (Use a dark theme)'!important;
+	color: var(--color03);
+    font-size: 16px;
+    font-weight: 900;
+	filter: drop-shadow(0 0 10px currentColor);
+}
+
+
+.sidebar_a4d4d9,
+.sidebar_a4d4d9 { 
+    background: none;
+}
